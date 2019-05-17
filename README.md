@@ -3,7 +3,10 @@
 This respository contains code for Expectation-Maximization and Variational Bayes for Kernel Density Estimation. 
 
 The usage of the functions is given here: 
+
+
 EM_KernelDensity
+```
 Input:
 	Required:
 	X (numpy array): An N times d dimensional array containing the data for KDE.
@@ -18,8 +21,10 @@ Output:
     Sigma: The estimated covariance matrix
     Iteration: The number of iterations used
     likelihood_arr: An array containg the likelihood of the model in each iteration.
+```
 
 EM_KernelDensity
+```
 Input:
 	Required:
 	X (numpy array): An N times d dimensional array containing the data for KDE.
@@ -35,8 +40,9 @@ Output:
     Iteration: The number of iterations used
     ELBO: An array containg the Evidence Lower Bound of the model in each iteration.
 
-
+```
 classify_EM
+```
 Input:
 	Required:
 
@@ -48,8 +54,9 @@ Input:
 
 
 Output:
-
+```
 ErrorEst (in TwoFoldCrossValidation.py)
+```
 Input:
 
     Required:
@@ -67,3 +74,4 @@ Output:
     Sigma: The estimated covariance matrix
     Iteration: The number of iterations used
     ELBO: An array containg the Evidence Lower Bound of the model in each iteration.
+```
