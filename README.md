@@ -8,11 +8,11 @@ The usage of the functions is given here:
 EM_KernelDensity
 ```
 Input:
-	Required:
+    Required:
 	X (numpy array): An N times d dimensional array containing the data for KDE.
 	cross_method (string): Either "Kfold", "HoldOut" or "LeaveOneOut" specifiying the validation metthod.
 
-	Optional:
+    Optional:
 	MaxIterations (integer): THe maximum number of updates before the function returns.
 	tol (float): The tolerance controlling how little the likelihood should change before the function return.
     	Kfolds (inter): The number of folds to use, if the method "Kfold" is used
@@ -26,11 +26,11 @@ Output:
 EM_KernelDensity
 ```
 Input:
-	Required:
+    Required:
 	X (numpy array): An N times d dimensional array containing the data for KDE.
 	cross_method (string): Either "Kfold", "HoldOut" or "LeaveOneOut" specifiying the validation metthod.
 
-	Optional:
+    Optional:
 	MaxIterations (integer): THe maximum number of updates before the function returns.
 	tol (float): The tolerance controlling how little the likelihood should change before the function return.
 	Kfolds (inter): The number of folds to use, if the method "Kfold" is used
@@ -44,16 +44,17 @@ Output:
 classify_EM
 ```
 Input:
-	Required:
-
+    Required:
+	None 
+    
     Optional:
 	data: The dataset to classify
         cross_method = (string): Either "Kfold", "HoldOut" or "LeaveOneOut" specifiying the validation metthod.
 	plot (boolean): Whether to plot the classification with the data
         data_augmentation (boolean): Whether to generate more data via the estimated density
 
-
 Output:
+
 ```
 ErrorEst (in TwoFoldCrossValidation.py)
 ```
