@@ -15,7 +15,7 @@ Input:
 	Optional:
 	MaxIterations (integer): THe maximum number of updates before the function returns.
 	tol (float): The tolerance controlling how little the likelihood should change before the function return.
-    Kfolds (inter): The number of folds to use, if the method "Kfold" is used
+    	Kfolds (inter): The number of folds to use, if the method "Kfold" is used
 
 Output:
     Sigma: The estimated covariance matrix
@@ -33,7 +33,7 @@ Input:
 	Optional:
 	MaxIterations (integer): THe maximum number of updates before the function returns.
 	tol (float): The tolerance controlling how little the likelihood should change before the function return.
-    Kfolds (inter): The number of folds to use, if the method "Kfold" is used
+	Kfolds (inter): The number of folds to use, if the method "Kfold" is used
 
 Output:
     Sigma: The estimated covariance matrix
@@ -48,9 +48,9 @@ Input:
 
     Optional:
 	data: The dataset to classify
-    cross_method = (string): Either "Kfold", "HoldOut" or "LeaveOneOut" specifiying the validation metthod.
-    plot (boolean): Whether to plot the classification with the data
-    data_augmentation (boolean): Whether to generate more data via the estimated density
+        cross_method = (string): Either "Kfold", "HoldOut" or "LeaveOneOut" specifiying the validation metthod.
+	plot (boolean): Whether to plot the classification with the data
+        data_augmentation (boolean): Whether to generate more data via the estimated density
 
 
 Output:
@@ -60,15 +60,16 @@ ErrorEst (in TwoFoldCrossValidation.py)
 Input:
 
     Required:
-
-	Optional:
+	None 
+	
+    Optional:
 	data: The dataset to estimate model error on
 	cross_method = (string): Either "Kfold", "HoldOut" or "LeaveOneOut" specifiying the validation metthod.
-    plot (boolean): Whether to plot the classification with the data
-    data_augmentation (boolean): Whether to generate more data via the estimated density
-    N_aug_sampes (integer): How many samples to generates
-    Outer_K (integer): The number of folds in the outer validation loop
-    estimator (string): Which method to use to estimate covariance matrix. Either "EM_KernelDensity" or "VB_KernelDensity"
+        plot (boolean): Whether to plot the classification with the data
+        data_augmentation (boolean): Whether to generate more data via the estimated density
+        N_aug_sampes (integer): How many samples to generates
+        Outer_K (integer): The number of folds in the outer validation loop
+        estimator (string): Which method to use to estimate covariance matrix. Either "EM_KernelDensity" or "VB_KernelDensity"
 
 Output:
     Sigma: The estimated covariance matrix
